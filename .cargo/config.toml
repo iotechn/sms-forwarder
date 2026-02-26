@@ -1,0 +1,5 @@
+# 静态编译（musl）：先执行 rustup target add x86_64-unknown-linux-musl
+# 构建命令见 README「静态编译」一节；需安装 musl-tools 并设置 CC（或使用脚本 build-static.sh）
+
+[target.x86_64-unknown-linux-musl]
+linker = "musl-gcc"
